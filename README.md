@@ -8,7 +8,7 @@
     
 3. Create a static method, which recevies a Node T and prints all its elements in-order.
  
-4. Create a unit test to verify the traversal of the tree against the next string: "12-17-23-50-54-72-76"
+4. Create a unit test to verify the traversal of the tree against the next string: **"9-12-14-17-19-23-50-54-67-72-76"**
    
  
 
