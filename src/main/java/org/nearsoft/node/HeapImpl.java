@@ -7,6 +7,10 @@ public class HeapImpl implements Heap {
 
     private int[] heap;
 
+    public int[] getHeap() {
+        return Arrays.copyOf(heap, heap.length);
+    }
+
 
     public HeapImpl(int[] array) {
 
