@@ -41,4 +41,9 @@ public class TraversalTest {
     public void testTraversal() {
         Assert.assertEquals("9-12-14-17-19-23-50-54-67-72-76", Node.inOrderTraversal(root).toString());
     }
+    @Test
+    public void randomTest(){
+        int half = 1;
+        System.out.println(++half);
+    }
 }
