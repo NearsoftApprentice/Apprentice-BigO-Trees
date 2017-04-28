@@ -33,7 +33,7 @@ public class HeapImpl implements Heap {
             sortedHeap[i] = heap[0];
             int lastIndex = lenghtHeap - (i + 1);
             heap[0] = heap[lastIndex];
-            heap = Arrays.copyOfRange(heap, 0, lastIndex );
+            heap = Arrays.copyOfRange(heap, 0, lastIndex);
             if (heap.length != 0)
                 heapIfY(heap, 0);
         }
@@ -66,13 +66,11 @@ public class HeapImpl implements Heap {
         if (!hasLeftChild && !hasRightChild) {
             return;
         }
-        int leftChildValue;
-        int rightChildValue;
+
 
         if (hasRightChild && hasLeftChild) {
-
-            leftChildValue = heap[leftChildIndex];
-            rightChildValue = heap[rightChildIndex];
+            int leftChildValue = heap[leftChildIndex];
+            int rightChildValue = heap[rightChildIndex];
             extremeChildIndex = leftChildValue < rightChildValue ? rightChildIndex : leftChildIndex;
 
         } else if (hasLeftChild) {
