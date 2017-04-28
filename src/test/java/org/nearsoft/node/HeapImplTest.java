@@ -13,6 +13,14 @@ public class HeapImplTest {
         Arrays.stream(heap.getHeap()).forEach(e -> {
             System.out.print(e + " ");
         });
+
+        System.out.println();
+
+        int[] sortedHeap = heap.heapSort();
+
+        Arrays.stream(sortedHeap).forEach(e -> {
+            System.out.print(e + ", ");
+        });
     }
 
 }

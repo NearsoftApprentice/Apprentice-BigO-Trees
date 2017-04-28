@@ -25,7 +25,19 @@ public class HeapImpl implements Heap {
     }
 
     public int[] heapSort() {
-        return new int[0];
+        int[] heap = getHeap();
+        int[] sortedHeap = new int[heap.length];
+        int lenghtHeap = heap.length;
+
+        for (int i = 0; i < lenghtHeap; i++) {
+            sortedHeap[i] = heap[0];
+            int lastIndex = lenghtHeap - (i + 1);
+            heap[0] = heap[lastIndex];
+            heap = Arrays.copyOfRange(heap, 0, lastIndex );
+            if (heap.length != 0)
+                heapIfY(heap, 0);
+        }
+        return sortedHeap;
     }
 
 
